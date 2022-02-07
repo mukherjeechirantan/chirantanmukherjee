@@ -10,6 +10,11 @@ body {
 
 #about img {
     margin: 10px;
+    margin-left: 35px;
+}
+
+p, li {
+    text-align: justify;
 }
 
 @keyframes fade-in {

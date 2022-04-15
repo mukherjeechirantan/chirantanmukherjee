@@ -94,14 +94,16 @@
 }
 
 html {
+
     scroll-behavior: smooth;
 }
+
 
 article, section, nav, header, footer, figure, figcaption {
   display: block;
 }
 
-body {
+body, tr, th, td {
     font-size: 17px;
     line-height: 1.6em;
 
@@ -155,6 +157,10 @@ h1 {
 
 h2 {
   padding-top: 20px;
+}
+
+h3 {
+  padding: 25px;
 }
 
 .page {

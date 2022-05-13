@@ -261,6 +261,11 @@ h3 {
 
 
 /* --- Heading --- */
+.contain-hold{
+	padding-right:8%;
+	padding-left:8%;
+	width:100%;
+}
 
 .heading__title {
   font-family: 'Harman Retro';
@@ -467,7 +472,10 @@ h3 {
 /* --- End Tutorial Icon --- */
 
 /* --- Content --- */
-
+.table tr td{
+	margin:0 !important;
+	padding:20px 0 0 0;
+}
 .content {
   border-bottom: 1px solid #EAEDF0;
 }
@@ -819,11 +827,6 @@ input:focus, button:focus {
 
 #about img {
     margin: 10px auto;
-}
-
-p, #talks li, #notes li {
-    text-align: justify;
-    margin: 15px auto;
 }
 
 #about .card {
@@ -1246,6 +1249,27 @@ pre.highlight {
   font-style: italic;
 }
 
+ #footer-margin{
+	 margin-left:2%;
+ }
+
+ .left-space{
+	 padding:0 6% 0 6%;
+ }
+
+.table-portfolio{
+
+}
+
+.td-vertical{
+	vertical-align:top;
+}
+
+.td-margin-bottom{
+	margin-bottom: 30px;
+}
+
+
 /* --- End Code --- */
 
 
@@ -1253,6 +1277,9 @@ pre.highlight {
 	body {
 		font-size: 18px;
 		line-height: 28px;
+		padding:0 !important;
+		margin:0 !important;
+		position:relative;
 	}
 	.heading__title {
 		font-size: 57px;
@@ -1924,6 +1951,10 @@ pre.highlight {
 	.nudge-mobile--bigger {
 		width: calc(100% + 5px);
 	}
+	#footer-margin{
+		margin-top:15%;
+	}
+
 }
 
 @media only screen and (min-width: 500px) and (max-width: 749px) {
@@ -2048,6 +2079,9 @@ pre.highlight {
 		padding-left: 25px;
 		width: 270px;
 	}
+	#footer-margin{
+		margin-top:5%;
+	}
 }
 
 @media only screen and (max-width: 345px) {
@@ -2086,7 +2120,16 @@ pre.highlight {
 	.about__mailing-list {
 		margin-top: -65px;
 	}
+
 }
+
+@media only screen and (min-width: 750px) {
+ #footer-margin{
+	 margin-top:2%;
+ }
+}
+
+
 
 @media only screen and (min-width: 1200px) and (min-height: 450px) {
 	.chapter-sidebar {

@@ -9,17 +9,26 @@
     <style>
         body {
             background-color: #76AEED;
-            background-image: url('mc.jpg'); /* Replace with the URL of your image */
+            background-image: url('watermark-image.jpg'); /* Replace with your image file name */
             background-size: cover; /* Ensures the image covers the entire page */
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed; /* Keeps the image in place during scrolling */
-            opacity: 0.9; /* Makes the background slightly transparent */
             font-family: Arial, sans-serif;
             color: #333;
             line-height: 1.6;
             text-align: center;
             padding: 2rem;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay */
+            z-index: -1; /* Ensures it stays behind the text */
         }
         a {
             color: #0056b3;
@@ -28,17 +37,8 @@
         a:hover {
             text-decoration: underline;
         }
-        h1 {
-            background-color: rgba(255, 255, 255, 0.7); /* Adds a semi-transparent background to the text */
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-        }
-        p {
-            background-color: rgba(255, 255, 255, 0.5); /* Makes the text more readable */
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
+        h1, p {
+            margin: 0.5rem 0;
         }
     </style>
 </head>
